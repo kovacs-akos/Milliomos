@@ -12,9 +12,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="1" x:Name="question_BTN" Content="Ez egy text" />
-        <StackPanel Grid.Row="1">
-            
+        <Label Grid.Row="1" x:Name="question_BTN" Content="Ez egy text" HorizontalAlignment="Center" VerticalAlignment="Top" 
+               HorizontalContentAlignment="Center" Height="170" Width="1500"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="a_BTN" Content="A: question" Width="800" Height="100"/>
+            <Button x:Name="b_BTN" Content="B: question" Width="800" Height="100"/>
         </StackPanel>
     </Grid>
 </Window>
