@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\kovacs.akos\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\kovacs.akos\\.nuget\\packages",
+      "C:\\Users\\juhasz.dominik.feren\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\juhasz.dominik.feren\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

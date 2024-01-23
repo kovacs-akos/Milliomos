@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Milliomos"
         mc:Ignorable="d"
-        Title="Legyen Ön is milliomos!" Height="1080" Width="1920" WindowState="Maximized">
+        Title="Legyen Ön is milliomos!" Height="1080" Width="1920" WindowState="Maximized" FontSize="64">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <Label Grid.Row="1" x:Name="question_BTN" Content="Ez egy text" />
+        <StackPanel Grid.Row="1">
+            
+        </StackPanel>
     </Grid>
 </Window>

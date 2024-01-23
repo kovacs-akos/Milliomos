@@ -8,23 +8,23 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kovacs.akos\\.nuget\\packages\\": {},
+    "C:\\Users\\juhasz.dominik.feren\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
+      "projectUniqueName": "Z:\\C#\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
       "projectName": "Milliomos",
-      "projectPath": "Z:\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
-      "packagesPath": "C:\\Users\\kovacs.akos\\.nuget\\packages\\",
-      "outputPath": "Z:\\Milliomos\\Milliomos\\Milliomos\\obj\\",
+      "projectPath": "Z:\\C#\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
+      "packagesPath": "C:\\Users\\juhasz.dominik.feren\\.nuget\\packages\\",
+      "outputPath": "Z:\\C#\\Milliomos\\Milliomos\\Milliomos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kovacs.akos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juhasz.dominik.feren\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
