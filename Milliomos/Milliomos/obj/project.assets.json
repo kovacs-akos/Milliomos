@@ -8,24 +8,19 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\juhasz.dominik.feren\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jdomi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\C#\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
+      "projectUniqueName": "D:\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
       "projectName": "Milliomos",
-      "projectPath": "Z:\\C#\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
-      "packagesPath": "C:\\Users\\juhasz.dominik.feren\\.nuget\\packages\\",
-      "outputPath": "Z:\\C#\\Milliomos\\Milliomos\\Milliomos\\obj\\",
+      "projectPath": "D:\\Milliomos\\Milliomos\\Milliomos\\Milliomos.csproj",
+      "packagesPath": "C:\\Users\\jdomi\\.nuget\\packages\\",
+      "outputPath": "D:\\Milliomos\\Milliomos\\Milliomos\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\juhasz.dominik.feren\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\jdomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
