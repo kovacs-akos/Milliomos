@@ -20,9 +20,12 @@ namespace Milliomos
     /// </summary>
     public partial class MainWindow : Window
     {
+        Megoldas m = new Megoldas();
+        
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = m;
         }
     }
 }

@@ -12,15 +12,15 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="1" x:Name="question_BTN" Content="Ez egy text" HorizontalAlignment="Center" VerticalAlignment="Top" 
+        <Label Grid.Row="1" x:Name="question_BTN" Content="{Binding currentPack.Question}" HorizontalAlignment="Center" VerticalAlignment="Top" 
        HorizontalContentAlignment="Center" Height="170" Width="1500"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="a_BTN" Content="A: question" Width="800" Height="100" Margin="0,0,15,0"/>
-            <Button x:Name="b_BTN" Content="B: question" Width="800" Height="100" Margin="15,0,0,0"/>
+            <Button x:Name="a_BTN" Content="{Binding currentPack.A}" Width="800" Height="100" Margin="0,0,15,0"/>
+            <Button x:Name="b_BTN" Content="{Binding currentPack.B}" Width="800" Height="100" Margin="15,0,0,0"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="80">
-            <Button x:Name="c_BTN" Content="C: question" Width="800" Height="100" Margin="0,0,15,0"/>
-            <Button x:Name="d_BTN" Content="D: question" Width="800" Height="100" Margin="15,0,0,0"/>
+            <Button x:Name="c_BTN" Content="{Binding currentPack.C}" Width="800" Height="100" Margin="0,0,15,0"/>
+            <Button x:Name="d_BTN" Content="{Binding currentPack.D}" Width="800" Height="100" Margin="15,0,0,0"/>
         </StackPanel>
     </Grid>
 </Window>
