@@ -13,6 +13,8 @@ namespace Milliomos
         public string B { get; set; }
         public string C { get; set; }
         public string D { get; set; }
+        public List<string> Valaszok { get; set; }
+        public string Megoldas { get { return Valaszok.Where(x => x.Contains("*")).First().Replace("*", ""); } }
         public string Difficulty { get; set; }
         public string Id { get; set;}
         

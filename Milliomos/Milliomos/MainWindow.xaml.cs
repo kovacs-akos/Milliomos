@@ -27,5 +27,18 @@ namespace Milliomos
             InitializeComponent();
             this.DataContext = m;
         }
+
+        private void BTN_Click(object sender, RoutedEventArgs e)
+        {
+            Button lenyomott = (Button)sender;
+            if (m.currentAnswer == lenyomott.Content)
+            {
+                MessageBox.Show("Nice");
+            }
+        }
+        //public void refresh()
+        //{
+        //    c_BTN.Content 
+        //}
     }
 }

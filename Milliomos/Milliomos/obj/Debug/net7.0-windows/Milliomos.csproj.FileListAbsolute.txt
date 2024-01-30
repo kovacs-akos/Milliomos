@@ -40,3 +40,4 @@ C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos.pdb
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos.genruntimeconfig.cache
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\ref\Milliomos.dll
+Z:\Milliomos\Milliomos\Milliomos\bin\Debug\net7.0-windows\questions.txt
