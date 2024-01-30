@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Milliomos"
         mc:Ignorable="d"
         Title="Legyen Ön is milliomos!" Height="1080" Width="1920" WindowState="Maximized" FontSize="64">
-    <Grid>
+    <Grid x:Name="gameGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>

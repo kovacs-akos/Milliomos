@@ -28,7 +28,6 @@ namespace Milliomos
             set { _currentPack = value; OnPorpertyChanged("currentPack"); }
         }
 
-        public string currentAnswer { get; set; }
 
 
 
@@ -60,29 +59,24 @@ namespace Milliomos
             Random rnd = new Random();
             int rndPack = rnd.Next(0, packs.Count);
             currentPack = packs[rndPack];
-            if (currentPack.A.Contains('*')) 
-            {
-                currentPack.A.Replace("*", "");
-                currentAnswer = currentPack.A;
-            }
-            if (currentPack.B.Contains('*'))
-            {
-                currentPack.B.Replace("*", "");
-                currentAnswer = currentPack.B;
-            }
-            if (currentPack.C.Contains('*'))
 
-            {
-                currentPack.C.Replace("*", "");
-                currentAnswer = currentPack.C;
+        }
 
-            }
-            if (currentPack.D.Contains('*'))
+        public bool CheckAnswer(char answer)
+        {
+            if (answer == currentPack.Answer)
             {
-                currentPack.D.Replace("*", "");
-                currentAnswer = currentPack.D;
+                return true;
             }
+            else
+            {
+                return false;
+            }
+        }
 
+        public void DeleteQuestion()
+        {
+            packs.Remove(currentPack);
         }
 
 
