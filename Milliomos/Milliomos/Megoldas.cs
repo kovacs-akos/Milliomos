@@ -28,13 +28,15 @@ namespace Milliomos
             set { _currentPack = value; OnPorpertyChanged("currentPack"); }
         }
 
+        public int Actual { get; private set; }
+
 
 
 
         public Megoldas()
         {
             ReadFile();
-            GetQuestion();
+            
         }
 
         public void ReadFile()
@@ -59,6 +61,7 @@ namespace Milliomos
             Random rnd = new Random();
             int rndPack = rnd.Next(0, packs.Count);
             currentPack = packs[rndPack];
+            Actual++;
 
         }
 
@@ -78,6 +81,8 @@ namespace Milliomos
         {
             packs.Remove(currentPack);
         }
+
+        
 
 
     }

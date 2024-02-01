@@ -5,22 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Milliomos"
         mc:Ignorable="d"
-        Title="Legyen Ön is milliomos!" Height="1080" Width="1920" WindowState="Maximized" FontSize="64">
+        Title="Legyen Ön is milliomos!" Height="1080" Width="1920" WindowState="Maximized" FontSize="64" Background="Aqua">
     <Grid x:Name="gameGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
+        
+        
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel x:Name="scoreBoard" Grid.Column="1" Height="500" Width="500">
+                <DockPanel>
+                    <Label Content="10" FontSize="30"  Width="330"/>
+                    <Label Content="1.000.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="9" FontSize="30"  Width="330"/>
+                    <Label Content="500.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="8" FontSize="30"  Width="330"/>
+                    <Label Content="250.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="7" FontSize="30"  Width="330"/>
+                    <Label Content="100.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="6" FontSize="30"  Width="330"/>
+                    <Label Content="50.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="5" FontSize="30"  Width="330"/>
+                    <Label Content="25.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="4" FontSize="30"  Width="330"/>
+                    <Label Content="10.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="3" FontSize="30"  Width="330"/>
+                    <Label Content="5.000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="2" FontSize="30"  Width="330"/>
+                    <Label Content="1000$" FontSize="30"  Width="200"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="1" FontSize="30"  Width="330"/>
+                    <Label Content="500$" FontSize="30"  Width="200"/>
+                </DockPanel>
+            </StackPanel>
+        </Grid>
+
+        
+
+        
 
         <Label Grid.Row="1" x:Name="question_BTN" Content="{Binding currentPack.Question}" HorizontalAlignment="Center" VerticalAlignment="Top" 
        HorizontalContentAlignment="Center" Height="170" Width="1500"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="a_BTN" Content="{Binding currentPack.A}" Width="800" Height="100" Margin="0,0,15,0" Click="BTN_Click"/>
-            <Button x:Name="b_BTN" Content="{Binding currentPack.B}" Width="800" Height="100" Margin="15,0,0,0" Click="BTN_Click"/>
+            <Button x:Name="a_BTN" Content="{Binding currentPack.A}" Width="800" Height="100" Margin="0,0,15,0" Click="BTN_Click" Background="White"/>
+            <Button x:Name="b_BTN" Content="{Binding currentPack.B}" Width="800" Height="100" Margin="15,0,0,0" Click="BTN_Click" Background="White"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="80">
-            <Button x:Name="c_BTN" Content="{Binding currentPack.C}" Width="800" Height="100" Margin="0,0,15,0" Click="BTN_Click"/>
-            <Button x:Name="d_BTN" Content="{Binding currentPack.D}" Width="800" Height="100" Margin="15,0,0,0" Click="BTN_Click"/>
+            <Button x:Name="c_BTN" Content="{Binding currentPack.C}" Width="800" Height="100" Margin="0,0,15,0" Click="BTN_Click" Background="White"/>
+            <Button x:Name="d_BTN" Content="{Binding currentPack.D}" Width="800" Height="100" Margin="15,0,0,0" Click="BTN_Click" Background="White"/>
         </StackPanel>
+        
+        
     </Grid>
 </Window>

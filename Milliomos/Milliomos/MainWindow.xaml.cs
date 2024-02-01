@@ -27,22 +27,44 @@ namespace Milliomos
         {
             InitializeComponent();
             this.DataContext = m;
+            m.GetQuestion();
+            Refresh_Scoreboard();
+
         }
 
 
 
-        private void BTN_Click(object sender, RoutedEventArgs e)
+        private async void BTN_Click(object sender, RoutedEventArgs e)
         {
             Button lenyomott = (Button)sender;
+            //set the background of the button to yellow and disable all buttons then wait 3 seconds
             lenyomott.Background = Brushes.Yellow;
-            DisableButtons();
-            Thread.Sleep(1000);
+            await Application.Current.Dispatcher.InvokeAsync(() =>
+            {
+                // Set the background of the button to yellow
+                lenyomott.Background = Brushes.Yellow;
+                
+
+                // Disable all buttons
+                //DisableButtons();
+            });
+
+            //DisableButtons();
+            //lenyomott.InvalidateVisual();
+            await Task.Delay(3000);
+            EnableButtons();
+
+
+
             if (m.CheckAnswer(lenyomott.Content.ToString()[0]))
             {
+                lenyomott.Background = Brushes.Green;
                 MessageBox.Show("Nice");
                 m.DeleteQuestion();
                 EnableButtons();
                 m.GetQuestion();
+                Refresh_Scoreboard();
+                lenyomott.Background = Brushes.White;
             }
             else
             {
@@ -63,9 +85,27 @@ namespace Milliomos
         }
 
 
-        //public void refresh()
-        //{
-        //    c_BTN.Content 
-        //}
+        private void Refresh_Scoreboard()
+        {
+            List<DockPanel> dockPanels = new List<DockPanel>();
+            dockPanels = scoreBoard.Children.OfType<DockPanel>().ToList();
+            //set all dockpanels background to white
+            foreach (DockPanel element in dockPanels)
+            {
+                element.Background = Brushes.White;
+                //set all labels foreground to black
+                foreach (Label label in element.Children.OfType<Label>())
+                {
+                    label.Foreground = Brushes.Black;
+                }
+            }
+            DockPanel dockPanel = dockPanels[dockPanels.Count() - m.Actual];
+            dockPanel.Background = Brushes.Orange;
+            // set the foreground color of the dockpanel's labels to white
+            foreach (Label label in dockPanel.Children.OfType<Label>())
+            {
+                label.Foreground = Brushes.White;
+            }
+        }
     }
 }
