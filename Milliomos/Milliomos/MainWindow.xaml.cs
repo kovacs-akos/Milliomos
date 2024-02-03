@@ -27,7 +27,7 @@ namespace Milliomos
         {
             InitializeComponent();
             this.DataContext = m;
-            m.GetQuestion();
+            m.GetQuestion();          
             Refresh_Scoreboard();
 
         }
@@ -106,6 +106,6 @@ namespace Milliomos
             {
                 label.Foreground = Brushes.White;
             }
-        }
+        }      
     }
 }

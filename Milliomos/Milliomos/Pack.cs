@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace Milliomos
 {
@@ -21,13 +23,13 @@ namespace Milliomos
 
         public Pack(string row)
         {
-            string[] data = row.Split(';');
+            string[] data = row.Replace(")", ": ").Split(";");        
             Question = data[0];
             //for (int i = 1; i <= 4; i++)
             //{
             //    Valaszok.Add(data[i]);
             //}
-            A = data[1];
+            A = data[1];         
             B = data[2];
             C = data[3];
             D = data[4];

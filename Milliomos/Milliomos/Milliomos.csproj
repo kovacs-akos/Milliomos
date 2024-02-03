@@ -8,6 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="images\**" />
+    <EmbeddedResource Remove="images\**" />
+    <None Remove="images\**" />
+    <Page Remove="images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\wallpaper.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="questions.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

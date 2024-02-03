@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Milliomos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cae405aa81e5abc27bf5ef1763f169ec3fc659bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+691dc262e6125df17a515566262a9e439cc0a7f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Milliomos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Milliomos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
