@@ -18,7 +18,6 @@ namespace Milliomos
         //public List<string> Valaszok { get; set; }
         //public string Megoldas { get { return Valaszok.Where(x => x.Contains("*")).First().Replace("*", ""); } }
         public char Answer { get; set;}
-        public string Difficulty { get; set; }
         
 
         public Pack(string row)
@@ -34,7 +33,6 @@ namespace Milliomos
             C = data[3];
             D = data[4];
             Answer = data[5][0];
-            Difficulty = data[6];
 
         }
 

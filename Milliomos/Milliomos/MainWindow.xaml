@@ -78,9 +78,9 @@
 
             <StackPanel x:Name="Helpers" Style="{StaticResource HelpersSP}">
                 <DockPanel>
-                    <Button x:Name="telephoneHelp_Btn" Content="Tel." Width="100" Margin="10, 10, 15, 10"/>
-                    <Button x:Name="divideHelp_Btn" Content="Divide" Width="100" Margin="15, 10, 15, 10"/>
-                    <Button x:Name="mobHelp_Btn" Content="Mob" Width="100" Margin="15, 10, 10, 10"/>
+                    <!--<Button x:Name="telephoneHelp_Btn" Content="Tel." Width="100" Margin="10, 10, 15, 10"/>-->
+                    <Button x:Name="divideHelp_Btn" Content="Divide" Width="100" Margin="15, 10, 15, 10" Click="divideHelp_Btn_Click"/>
+                    <Button x:Name="mobHelp_Btn" Content="Mob" Width="100" Margin="15, 10, 10, 10" Click="mobHelp_Btn_Click"/>
                 </DockPanel>
             </StackPanel>
 
@@ -139,6 +139,7 @@
         </Grid>
 
         <Label x:Name="question_BTN" Content="{Binding currentPack.Question}" Style="{StaticResource QuestionLBL}" Margin="-10"/>
+        <Grid x:Name="answersGrid" Grid.Row="1">
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="a_BTN" Content="{Binding currentPack.A}" Margin="10" Click="BTN_Click"/>
             <Button x:Name="b_BTN" Content="{Binding currentPack.B}" Margin="10" Click="BTN_Click"/>
@@ -147,6 +148,7 @@
             <Button x:Name="c_BTN" Content="{Binding currentPack.C}" Margin="10" Click="BTN_Click"/>
             <Button x:Name="d_BTN" Content="{Binding currentPack.D}" Margin="10" Click="BTN_Click"/>
         </StackPanel>
+        </Grid>
        
     </Grid>
 </Window>

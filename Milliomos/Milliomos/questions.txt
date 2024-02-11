@@ -1,5 +1,10 @@
-Which of these animals is known for its humps?;A) Elephant;B) Camel;C) Giraffe;D) Rhinoceros;B;1
-Which planet is closest to the Sun?;A) Venus;B) Mars;C) Mercury;D) Earth;C;1
-What is the capital city of France?;A) Madrid;B) Rome;C) Paris;D) Berlin;C;1
-What do bees collect from flowers?;A) Pollen;B) Nectar;C) Seeds;D) Leaves;B;1
-What is the primary ingredient in guacamole?;A) Avocado;B) Tomato;C) Onion;D) Lemon juice;A;1
+Hány kebabot eszik meg Kaplon egy héten?;A) Egyet sem;B) Legalább kettõt;C) Az összeset;D) Mi az a kebab?;C
+A Szlovákiai utazáson, hány osztálytársunkat kellett hazavinni?;A) 1;B) 2;C) 3;D) 4;B
+Mi az Anna-effekt?;A) xd;B) Túlárazott büfés kaja helyett foodorán rendelsz;C) Balogh Anna tanárnõnél nem lehet puskazni;D) Szunetben 15-en könyökölnek a büfépultnál;D
+Átlagosan hányszor jön mentõ a Jedlikhez?;A) Már hazajárnak;B) Hetente;C) Havonta;D) Fél évente;A
+A tavalyiakból ítélve, mire számíthatunk az idei diáknapon?;A) Mûködni fog az órarend;B) Mi az a diáknap?;C) Semmi jóra;D) Dök utána nap magyarázkodik;C
+Kik dolgozzanak?;A) A szegények;B) A munkásember mindig pancser marad;C) Lopni, csalni, hazudni kell;D) A tanárok ne;B
+Tündi mikor kéri, hogy írj alá egy papírt?;A) Azonnal;B) Amikor a pancser kolléga ráér;C) Elfelejti;D) "Csak a hátsó ajtón lehet kimenni";A
+Mikor rendelj kaját?;A) Tokmindegy igazabol;B) Ha B epuletbe vagy;C) Sose rendelj, zsa bufe;D) A rendeles be van tiltva;A;
+Hol vegzi Zalan a Jedlik utan?;A) Hid alatt³;B) Szegedi Csillagborton;C) Apple vezerigazgatosag;D) Mekiben(bekoltozik);D;
+Milyen lesz a Jedlikes farsang?;A) Dokosok most is bohocnak oltoznek;B) Fixen lany nyeri a jelmezversenyt;C) Diaknap se lesz, nemhogy farsang;D) Senki sem fog beoltozni;D
