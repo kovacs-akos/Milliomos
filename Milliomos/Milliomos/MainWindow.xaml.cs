@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -34,6 +35,7 @@ namespace Milliomos
 
         private async void BTN_Click(object sender, RoutedEventArgs e)
         {
+            
             Button lenyomott = (Button)sender;
             //set the background of the button to yellow and disable all buttons then wait 3 seconds
             lenyomott.Background = Brushes.Yellow; 
@@ -47,7 +49,8 @@ namespace Milliomos
             {
                 
                 lenyomott.Background = Brushes.Green;
-                MessageBox.Show("You've a brain, fantastic", "Nice dude", MessageBoxButton.OK, MessageBoxImage.None);
+                round++;
+                MessageBox.Show($"You've a brain, fantastic \n{GetCurrentAmount()}", "Nice dude", MessageBoxButton.OK, MessageBoxImage.None);
                 m.DeleteQuestion();
                 m.GetQuestion();
                 resetButtons();
@@ -57,7 +60,7 @@ namespace Milliomos
             else
             {
                 lenyomott.Background = Brushes.Red;
-                if (MessageBox.Show("Wrong, you have failed the game!", "All you need to do is to follow the damn train CJ", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)                           
+                if (MessageBox.Show($"Wrong, you have failed the game! {GetCurrentAmount()}", "All you need to do is to follow the damn train CJ", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)                           
                 {
                     MessageBox.Show("You little fuck, you think you can make a decision here!", "Asshole", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
@@ -65,9 +68,25 @@ namespace Milliomos
             }
         }
 
+        string amount = "";
+        int round = 1;
+        private string GetCurrentAmount()
+        {
+            if (round > 1)
+            {
+                return amount = $"Your current amount: {amount}";
+            }
+            else
+            {
+                return amount = "You haven't win anything";
+            }
+        }
+
+
         private void Refresh_Scoreboard()
         {
-            List<DockPanel> dockPanels = scoreBoard.Children.OfType<DockPanel>().ToList();         
+            List<DockPanel> dockPanels = scoreBoard.Children.OfType<DockPanel>().ToList();
+
             if (m.Actual > 0 && m.Actual <= dockPanels.Count)
             {
                 DockPanel currentQuestionPanel = dockPanels[dockPanels.Count - m.Actual];
@@ -76,7 +95,12 @@ namespace Milliomos
                 {
                     label.Background = Brushes.Orange;
                     label.Foreground = Brushes.White;
+                    amount = label.Content.ToString();
                 }
+                
+                
+            }
+        }
                 if (m.Actual >= 2 && m.Actual <= dockPanels.Count)
                 {
                     DockPanel previousQuestionPanel = dockPanels[dockPanels.Count - m.Actual + 1];
