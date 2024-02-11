@@ -63,4 +63,5 @@ D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\refint\Milliomos.dll
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos.pdb
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos.genruntimeconfig.cache
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\ref\Milliomos.dll
+D:\Milliomos\Milliomos\Milliomos\bin\Debug\net7.0-windows\images\wallpaper.jpg
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos_Content.g.cs
