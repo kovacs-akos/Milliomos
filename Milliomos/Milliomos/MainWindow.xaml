@@ -49,11 +49,6 @@
             <Setter Property="BorderBrush" Value="DarkBlue"/>
             <Setter Property="Background" Value="Black"/>
             <Setter Property="Foreground" Value="White"/>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Foreground" Value="Black"/>
-                </Trigger>
-            </Style.Triggers>
         </Style>
         <Style TargetType="DockPanel">
             <Setter Property="HorizontalAlignment" Value="Center"/>

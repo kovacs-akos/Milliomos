@@ -28,7 +28,7 @@ namespace Milliomos
             set { _currentPack = value; OnPorpertyChanged("currentPack"); }
         }
 
-        public int Actual { get; private set; }
+        public int Actual{ get; private set; }
 
 
 
