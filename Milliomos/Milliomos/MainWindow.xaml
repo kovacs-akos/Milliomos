@@ -28,7 +28,7 @@
             <Setter Property="Grid.Column" Value="0"/>
         </Style>
         <Style x:Key="PositionOfStackP">
-            <Setter Property="StackPanel.Height" Value="390"/>
+            <Setter Property="StackPanel.Height" Value="400"/>
             <Setter Property="StackPanel.Width" Value="350"/>
             <Setter Property="StackPanel.HorizontalAlignment" Value="Right"/>
             <Setter Property="Grid.Column" Value="1"/>
@@ -44,11 +44,16 @@
         <Style TargetType="Button">
             <Setter Property="Width" Value="700"/>
             <Setter Property="Height" Value="60"/>
-            <Setter Property="BorderBrush" Value="DarkBlue"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="DarkBlue"/>
             <Setter Property="Background" Value="Black"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
         <Style TargetType="DockPanel">
             <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -81,114 +86,54 @@
 
             <StackPanel  x:Name="scoreBoard" Style="{StaticResource PositionOfStackP}" Margin="0, 0, 0, 80">
                 <DockPanel>
-                    <Border>
-                        <Label Content="10" Foreground="White"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" Foreground="White"/>
-                    </Border>
-                    <Border>
-                        <Label Content="1.000.000$" Foreground="White"/>
-                    </Border>
+                    <Label Content="10" Foreground="White"/>
+                    <Label Content="-" Width="50" Foreground="White"/>
+                    <Label Content="1.000.000$" Foreground="White"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="9"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="500.000$"/>
-                    </Border>
+                    <Label Content="9"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="500.000$"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="8"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="250.000$"/>
-                    </Border>
+                    <Label Content="8"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="250.000$"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="7"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="100.000$"/>
-                    </Border>
+                    <Label Content="7"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="100.000$"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="6"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="50.000$"/>
-                    </Border>
+                    <Label Content="6"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="50.000$"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="5" Foreground="White"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center" Foreground="White"/>
-                    </Border>
-                    <Border>
-                        <Label Content="25.000$" Foreground="White"/>
-                    </Border>
+                    <Label Content="5" Foreground="White"/>
+                    <Label Content="-" Width="50" Foreground="White"/>
+                    <Label Content="25.000$" Foreground="White"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="4"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="10.000$"/>
-                    </Border>
+                    <Label Content="4"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="10.000$"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="3"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="5.000$"/>
-                    </Border>
+                    <Label Content="3"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="5.000$"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="2"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="1.000$"/>
-                    </Border>
+                    <Label Content="2"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="1.000$"/>
                 </DockPanel>
                 <DockPanel>
-                    <Border>
-                        <Label Content="1"/>
-                    </Border>
-                    <Border>
-                        <Label Content="-" HorizontalContentAlignment="Center"/>
-                    </Border>
-                    <Border>
-                        <Label Content="500$"/>
-                    </Border>
+                    <Label Content="1"/>
+                    <Label Content="-" Width="50"/>
+                    <Label Content="500$"/>
                 </DockPanel>
             </StackPanel>
         </Grid>

@@ -27,85 +27,62 @@ namespace Milliomos
         {
             InitializeComponent();
             this.DataContext = m;
-            m.GetQuestion();          
+            m.GetQuestion();
             Refresh_Scoreboard();
 
         }
-
-
 
         private async void BTN_Click(object sender, RoutedEventArgs e)
         {
             Button lenyomott = (Button)sender;
             //set the background of the button to yellow and disable all buttons then wait 3 seconds
-            lenyomott.Background = Brushes.Yellow;
-            await Application.Current.Dispatcher.InvokeAsync(() =>
-            {
-                // Set the background of the button to yellow
-                lenyomott.Background = Brushes.Yellow;
-                
-
-                // Disable all buttons
-                //DisableButtons();
-            });
-
-            //DisableButtons();
-            //lenyomott.InvalidateVisual();
-            await Task.Delay(3000);
-            EnableButtons();
+            lenyomott.Background = Brushes.Yellow; 
+            lenyomott.Foreground = Brushes.Black;
 
 
+            await Task.Delay(5000);
 
+            lenyomott.Foreground = Brushes.White;
             if (m.CheckAnswer(lenyomott.Content.ToString()[0]))
             {
+                
                 lenyomott.Background = Brushes.Green;
-                MessageBox.Show("Nice");
+                MessageBox.Show("You've a brain, fantastic", "Nice dude", MessageBoxButton.OK, MessageBoxImage.None);
                 m.DeleteQuestion();
-                EnableButtons();
                 m.GetQuestion();
                 Refresh_Scoreboard();
-                lenyomott.Background = Brushes.White;
+                lenyomott.Background = Brushes.Black;
             }
             else
             {
-                MessageBox.Show("Wrong");
-                
+                lenyomott.Background = Brushes.Red;
+                if (MessageBox.Show("Wrong, you have failed the game!", "All you need to do is to follow the damn train CJ", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)                           
+                {
+                    MessageBox.Show("You little fuck, you think you can make a decision here!", "Asshole", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                QuitGame();
             }
         }
-
-        private void DisableButtons()
-        {
-            a_BTN.IsEnabled = b_BTN.IsEnabled = c_BTN.IsEnabled = d_BTN.IsEnabled = false;
-
-        }
-
-        private void EnableButtons()
-        {
-               a_BTN.IsEnabled = b_BTN.IsEnabled = c_BTN.IsEnabled = d_BTN.IsEnabled = true;
-        }
-
 
         private void Refresh_Scoreboard()
         {
-            List<DockPanel> dockPanels = new List<DockPanel>();
-            dockPanels = scoreBoard.Children.OfType<DockPanel>().ToList();
-            //set all dockpanels background to white
-            foreach (DockPanel element in dockPanels)
+            List<DockPanel> dockPanels = scoreBoard.Children.OfType<DockPanel>().ToList();         
+            if (m.Actual > 0 && m.Actual <= dockPanels.Count)
             {
-                element.Background = Brushes.White;
-                //set all labels foreground to black
-                foreach (Label label in element.Children.OfType<Label>())
+                DockPanel currentQuestionPanel = dockPanels[dockPanels.Count - m.Actual];               
+              
+                foreach (Label label in currentQuestionPanel.Children.OfType<Label>())
                 {
-                    label.Foreground = Brushes.Black;
+                    label.Background = Brushes.Orange;
+                    label.Foreground = Brushes.White;
                 }
             }
-            DockPanel dockPanel = dockPanels[dockPanels.Count() - m.Actual];
-            dockPanel.Background = Brushes.Orange;
-            // set the foreground color of the dockpanel's labels to white
-            foreach (Label label in dockPanel.Children.OfType<Label>())
-            {
-                label.Foreground = Brushes.White;
-            }
-        }      
+        }
+
+
+        private void QuitGame()
+        {
+          this.Close();
+        }
     }
 }
