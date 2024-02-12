@@ -1,10 +1,10 @@
-Hány kebabot eszik meg Kaplon egy héten?;A) Egyet sem;B) Legalább kettõt;C) Az összeset;D) Mi az a kebab?;C
-A Szlovákiai utazáson, hány osztálytársunkat kellett hazavinni?;A) 1;B) 2;C) 3;D) 4;B
-Mi az Anna-effekt?;A) xd;B) Túlárazott büfés kaja helyett foodorán rendelsz;C) Balogh Anna tanárnõnél nem lehet puskazni;D) Szunetben 15-en könyökölnek a büfépultnál;D
-Átlagosan hányszor jön mentõ a Jedlikhez?;A) Már hazajárnak;B) Hetente;C) Havonta;D) Fél évente;A
-A tavalyiakból ítélve, mire számíthatunk az idei diáknapon?;A) Mûködni fog az órarend;B) Mi az a diáknap?;C) Semmi jóra;D) Dök utána nap magyarázkodik;C
-Kik dolgozzanak?;A) A szegények;B) A munkásember mindig pancser marad;C) Lopni, csalni, hazudni kell;D) A tanárok ne;B
-Tündi mikor kéri, hogy írj alá egy papírt?;A) Azonnal;B) Amikor a pancser kolléga ráér;C) Elfelejti;D) "Csak a hátsó ajtón lehet kimenni";A
-Mikor rendelj kaját?;A) Tokmindegy igazabol;B) Ha B epuletbe vagy;C) Sose rendelj, zsa bufe;D) A rendeles be van tiltva;A;
-Hol vegzi Zalan a Jedlik utan?;A) Hid alatt³;B) Szegedi Csillagborton;C) Apple vezerigazgatosag;D) Mekiben(bekoltozik);D;
+ï»¿HÃ¡ny kebabot eszik meg Kaplon egy hÃ©ten?;A) Egyet sem;B) LegalÃ¡bb kettÅ‘t;C) Az Ã¶sszeset;D) Mi az a kebab?;C
+A SzlovÃ¡kiai utazÃ¡son, hÃ¡ny osztÃ¡lytÃ¡rsunkat kellett hazavinni?;A) 1;B) 2;C) 3;D) 4;B
+Mi az Anna-effekt?;A) xd;B) TÃºlÃ¡razott bÃ¼fÃ©s kaja helyett foodorÃ¡n rendelsz;C) Balogh Anna tanÃ¡rnÅ‘nÃ©l nem lehet puskazni;D) Szunetben 15-en kÃ¶nyÃ¶kÃ¶lnek a bÃ¼fÃ©pultnÃ¡l;D
+Ãtlagosan hÃ¡nyszor jÃ¶n mentÅ‘ a Jedlikhez?;A) MÃ¡r hazajÃ¡rnak;B) Hetente;C) Havonta;D) FÃ©l Ã©vente;A
+A tavalyiakbÃ³l Ã­tÃ©lve, mire szÃ¡mÃ­thatunk az idei diÃ¡knapon?;A) MÅ±kÃ¶dni fog az Ã³rarend;B) Mi az a diÃ¡knap?;C) Semmi jÃ³ra;D) DÃ¶k utÃ¡na nap magyarÃ¡zkodik;C
+Kik dolgozzanak?;A) A szegÃ©nyek;B) A munkÃ¡sember mindig pancser marad;C) Lopni, csalni, hazudni kell;D) A tanÃ¡rok ne;B
+TÃ¼ndi mikor kÃ©ri, hogy Ã­rj alÃ¡ egy papÃ­rt?;A) Azonnal;B) Amikor a pancser kollÃ©ga rÃ¡Ã©r;C) Elfelejti;D) "Csak a hÃ¡tsÃ³ ajtÃ³n lehet kimenni";A
+Mikor rendelj kajÃ¡t?;A) Tokmindegy igazabol;B) Ha B epuletbe vagy;C) Sose rendelj, zsa bufe;D) A rendeles be van tiltva;A;
+Hol vegzi Zalan a Jedlik utan?;A) Hid alattÅ‚;B) Szegedi Csillagborton;C) Apple vezerigazgatosag;D) Mekiben(bekoltozik);D;
 Milyen lesz a Jedlikes farsang?;A) Dokosok most is bohocnak oltoznek;B) Fixen lany nyeri a jelmezversenyt;C) Diaknap se lesz, nemhogy farsang;D) Senki sem fog beoltozni;D

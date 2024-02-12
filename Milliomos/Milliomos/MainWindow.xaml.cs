@@ -49,7 +49,7 @@ namespace Milliomos
             {
                 
                 lenyomott.Background = Brushes.Green;
-                round++;
+                
                 MessageBox.Show($"You've a brain, fantastic \n{GetCurrentAmount()}", "Nice dude", MessageBoxButton.OK, MessageBoxImage.None);
                 m.DeleteQuestion();
                 m.GetQuestion();
@@ -69,10 +69,9 @@ namespace Milliomos
         }
 
         string amount = "";
-        int round = 1;
         private string GetCurrentAmount()
         {
-            if (round > 1)
+            if (m.Actual >= 1)
             {
                 return amount = $"Your current amount: {amount}";
             }
@@ -145,30 +144,38 @@ namespace Milliomos
 
         private void mobHelp_Btn_Click(object sender, RoutedEventArgs e)
         {
-            int chance = m.Actual * 5;
+            int chance = m.Actual * 100;
             Random r = new Random();
             int random = r.Next(1, 100);
             List<StackPanel> stackPanels = answersGrid.Children.OfType<StackPanel>().ToList();
             List<Button> buttons = new List<Button>();
             buttons.AddRange(stackPanels[0].Children.OfType<Button>());
             buttons.AddRange(stackPanels[1].Children.OfType<Button>());
-            foreach (var button in buttons)
+            if (random <= 100 - chance)
             {
-                string content = button.Content.ToString();
-                if (content[0] == m.currentPack.Answer && random <= 100 - chance)
+                foreach (var button in buttons)
                 {
-                    button.Background = Brushes.Orange;
-                }
-                else if (random >= 100 - chance)
-                {
-                    int rIndex = r.Next(0, 3);
-                    string content2 = buttons[rIndex].Content.ToString();
-                    if (content2[0] == (m.currentPack.Answer))
+                    string content = button.Content.ToString();
+                    if (content[0] == m.currentPack.Answer)
                     {
-                        buttons[rIndex].Background = Brushes.Orange;
+                        button.Background = Brushes.Orange;
                     }
                 }
+            } 
+            else
+            {
+                int rIndex = r.Next(0, 3);
+                string content2 = buttons[rIndex].Content.ToString();
+                if (content2[0] != (m.currentPack.Answer))
+                {
+                    buttons[rIndex].Background = Brushes.Orange;
+                }
             }
+
+
+
+
+       
             mobHelp_Btn.IsEnabled = false;
             mobHelp_Btn.Visibility = Visibility.Hidden;
         }
