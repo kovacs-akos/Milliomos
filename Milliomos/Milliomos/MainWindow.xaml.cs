@@ -42,14 +42,14 @@ namespace Milliomos
             lenyomott.Foreground = Brushes.Black;
 
 
-            await Task.Delay(5000);
+            await Task.Delay(4000);
 
             lenyomott.Foreground = Brushes.White;
             if (m.CheckAnswer(lenyomott.Content.ToString()[0]))
             {
                 
                 lenyomott.Background = Brushes.Green;
-                round++;
+                
                 MessageBox.Show($"You've a brain, fantastic \n{GetCurrentAmount()}", "Nice dude", MessageBoxButton.OK, MessageBoxImage.None);
                 m.DeleteQuestion();
                 m.GetQuestion();
@@ -70,10 +70,9 @@ namespace Milliomos
         }
 
         string amount = "";
-        int round = 1;
         private string GetCurrentAmount()
         {
-            if (round > 1)
+            if (m.Actual >= 1)
             {
                 return amount = $"Your current amount: {amount}";
             }
@@ -101,6 +100,7 @@ namespace Milliomos
                 
                 
             }
+        }
                 if (m.Actual >= 2 && m.Actual <= dockPanels.Count)
                 {
                     DockPanel previousQuestionPanel = dockPanels[dockPanels.Count - m.Actual + 1];
@@ -110,7 +110,7 @@ namespace Milliomos
                         label.Foreground = Brushes.Orange;
                     }
                 }
-        }
+    }
         
 
 
@@ -129,7 +129,7 @@ namespace Milliomos
             buttons.AddRange(stackPanels[1].Children.OfType<Button>());
             int r1 = r.Next(0, 3);
             int r2 = r.Next(0, 3);
-            while (buttons[r1].Content.ToString()[0] == m.currentPack.Answer && buttons[r2].Content.ToString()[0] == m.currentPack.Answer && r1 == r2)
+            while (buttons[r1].Content.ToString()[0] == m.currentPack.Answer || buttons[r2].Content.ToString()[0] == m.currentPack.Answer || r1 == r2)
             {
                 r1 = r.Next(0, 3);
                 r2 = r.Next(0, 3);
@@ -139,37 +139,49 @@ namespace Milliomos
             buttons[r2].IsEnabled = false;
             buttons[r2].Visibility = Visibility.Hidden;
             
-            
-            //divideHelp_Btn.IsEnabled = false;
-            //divideHelp_Btn.Visibility = Visibility.Hidden;
+            divideHelp_Btn.IsEnabled = false;
+            divideHelp_Btn.Visibility = Visibility.Hidden;
         }
 
         private void mobHelp_Btn_Click(object sender, RoutedEventArgs e)
         {
-            int chance = m.Actual * 5;
+            int chance = m.Actual * 100;
             Random r = new Random();
             int random = r.Next(1, 100);
             List<StackPanel> stackPanels = answersGrid.Children.OfType<StackPanel>().ToList();
             List<Button> buttons = new List<Button>();
             buttons.AddRange(stackPanels[0].Children.OfType<Button>());
             buttons.AddRange(stackPanels[1].Children.OfType<Button>());
-            foreach (var button in buttons)
+            if (random <= 100 - chance)
             {
-                string content = button.Content.ToString();
-                if (content[0] == m.currentPack.Answer && random <= 100 - chance)
+                foreach (var button in buttons)
                 {
-                    button.Background = Brushes.Orange;
-                }
-                else if (random >= 100 - chance)
-                {
-                    int rIndex = r.Next(0, 3);
-                    string content2 = buttons[rIndex].Content.ToString();
-                    if (content2[0] == (m.currentPack.Answer))
+                    string content = button.Content.ToString();
+                    if (content[0] == m.currentPack.Answer)
                     {
-                        buttons[rIndex].Background = Brushes.Orange;
+                        button.Background = Brushes.Orange;
                     }
                 }
-            }
+            } 
+            //else
+            //{
+            //    int rIndex = r.Next(0, 3);
+            //    while() // le kell ellenőrizni, hogy ne a jó választ válassza ki
+            //    {
+            //        string content2 = buttons[rIndex].Content.ToString();
+            //        if (content2[0] != (m.currentPack.Answer))
+            //        {
+            //            buttons[rIndex].Background = Brushes.Orange;
+            //        }
+            //    }
+                
+                
+            //}
+
+
+
+
+       
             mobHelp_Btn.IsEnabled = false;
             mobHelp_Btn.Visibility = Visibility.Hidden;
         }

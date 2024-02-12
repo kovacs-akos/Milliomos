@@ -41,7 +41,7 @@ namespace Milliomos
 
         public void ReadFile()
         {
-            StreamReader sr = new StreamReader("questions.txt");
+            StreamReader sr = new StreamReader("questions.txt", Encoding.UTF8);
             while (!sr.EndOfStream)
             {
                 string row = sr.ReadLine();

@@ -67,3 +67,5 @@ D:\Milliomos\Milliomos\Milliomos\bin\Debug\net7.0-windows\images\wallpaper.jpg
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos_Content.g.cs
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\bin\Debug\net7.0-windows\images\wallpaper.jpg
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos_Content.g.cs
+Z:\Milliomos\Milliomos\Milliomos\bin\Debug\net7.0-windows\images\wallpaper.jpg
+Z:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\Milliomos_Content.g.cs
