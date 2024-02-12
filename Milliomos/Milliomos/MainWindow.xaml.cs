@@ -42,7 +42,7 @@ namespace Milliomos
             lenyomott.Foreground = Brushes.Black;
 
 
-            await Task.Delay(1000);
+            await Task.Delay(4000);
 
             lenyomott.Foreground = Brushes.White;
             if (m.CheckAnswer(lenyomott.Content.ToString()[0]))

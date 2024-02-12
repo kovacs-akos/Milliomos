@@ -75,3 +75,9 @@ D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\SuccesMSGB.baml
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\FailedMSGB.baml
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\WinMSGB.g.cs
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\WinMSGB.baml
+C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\FailedMSGB.g.cs
+C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\SuccesMSGB.g.cs
+C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\WinMSGB.g.cs
+C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\FailedMSGB.baml
+C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\SuccesMSGB.baml
+C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\WinMSGB.baml
