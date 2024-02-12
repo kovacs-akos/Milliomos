@@ -55,6 +55,7 @@ namespace Milliomos
                 m.GetQuestion();
                 resetButtons();
                 Refresh_Scoreboard();
+                Win();
                 lenyomott.Background = Brushes.Black;
             }
             else
@@ -78,7 +79,7 @@ namespace Milliomos
             }
             else
             {
-                return amount = "You haven't win anything";
+                return amount = "You haven't won anything";
             }
         }
 
@@ -100,7 +101,6 @@ namespace Milliomos
                 
                 
             }
-        }
                 if (m.Actual >= 2 && m.Actual <= dockPanels.Count)
                 {
                     DockPanel previousQuestionPanel = dockPanels[dockPanels.Count - m.Actual + 1];
@@ -110,8 +110,8 @@ namespace Milliomos
                         label.Foreground = Brushes.Orange;
                     }
                 }
-            }
         }
+        
 
 
 
@@ -187,5 +187,12 @@ namespace Milliomos
                 button.Background = Brushes.Black;
             }
         }
+
+        private void Win() {
+            if (m.Actual == 11)
+            MessageBox.Show("You've won a million dollars, congratulations!", "Congratulations", MessageBoxButton.OK, MessageBoxImage.None);
+            QuitGame();
+        }
+
     }
 }
