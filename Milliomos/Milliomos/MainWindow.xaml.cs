@@ -25,6 +25,8 @@ namespace Milliomos
     {
         Megoldas m = new Megoldas();
 
+        private MediaPlayer mediaPlayer = new MediaPlayer();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,6 +34,8 @@ namespace Milliomos
             this.DataContext = m;
             m.GetQuestion();
             Refresh_Scoreboard();
+
+            PlayStartupSound();
 
         }
 
@@ -231,6 +235,51 @@ namespace Milliomos
                 this.Background = imageBrush;
             }
         }
+
+        private List<string> songPlaylist = new List<string>
+        {
+            "sounds/MainTheme.mp3",     
+            "sounds/OpeningTitlesWalkDown.mp3",
+            "sounds/FastestFingerFirst.mp3",
+            "sounds/LetsPlay.mp3",
+        };
+        private int currentSongIndex = 0;
+
+        private void PlayStartupSound()
+        {
+            try
+            {
+                if (currentSongIndex < songPlaylist.Count)
+                {
+                    mediaPlayer.Open(new Uri(songPlaylist[currentSongIndex], UriKind.Relative));
+                    mediaPlayer.Play();
+                    mediaPlayer.MediaEnded += MediaPlayer_MediaEnded;
+                }         
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+
+        private void MediaPlayer_MediaEnded(object sender, EventArgs e)
+        {
+            currentSongIndex++;
+
+            if (currentSongIndex < songPlaylist.Count)
+            {
+                mediaPlayer.Open(new Uri(songPlaylist[currentSongIndex], UriKind.Relative));
+                mediaPlayer.Play();
+            }
+            else
+            {
+                currentSongIndex = 0;
+                mediaPlayer.Open(new Uri(songPlaylist[currentSongIndex], UriKind.Relative));
+                mediaPlayer.Play();
+            }
+        }
+
+
         private void QuitGame()
         {
             this.Close();

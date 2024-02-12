@@ -32,6 +32,26 @@
     <None Update="questions.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="sounds\FastestFingerFirst.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="sounds\LetsPlay.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="sounds\MainTheme.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="sounds\OpeningTitlesWalkDown.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="sounds\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Uno.UI" Version="5.1.50" />
   </ItemGroup>
 
 </Project>

@@ -33,7 +33,7 @@ namespace Milliomos
         private string randomString()
         {
             Random random = new Random();
-            List<string> answerToUserList = new List<string>() { "You're my son amigo!", "Te nagyon pacekban nyomod ember!", "Én magát hazavinném, beleegyezne?", "Uram, fékezze magát!\nMódos Gabi bácsi mindjárt felveszi magát tanárnak!", "Maga a kedvencem eddig, remélem ezt tudja.", "Maga szárnnyal!", "Én magához mennék családot alapítani.", "Csak így tovább!", "Ne adja fel,\nhamarosan vége a játéknak!", "A tudása elbűvölő számomra.", "Nekem maga nagyon tetszik." };
+            List<string> answerToUserList = new List<string>() { "You're my son amigo!", "Te nagyon pacekban nyomod ember!", "Én magát hazavinném, beleegyezne?", "Uram, fékezze magát!\nMódos Gabi bácsi mindjárt felveszi magát tanárnak!", "Maga a kedvencem eddig, remélem ezt tudja.", "Maga szárnyal!", "Én magához mennék családot alapítani.", "Csak így tovább!", "Ne adja fel,\nhamarosan vége a játéknak!", "A tudása elbűvölő számomra.", "Nekem maga nagyon tetszik." };
             int randomAnwser = random.Next(answerToUserList.Count);
             return answerToUserList[randomAnwser];
         }
