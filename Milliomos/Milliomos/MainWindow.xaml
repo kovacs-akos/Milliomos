@@ -74,8 +74,8 @@
             <StackPanel x:Name="Helpers" Style="{StaticResource HelpersSP}">
                 <DockPanel>
                     <!--<Button x:Name="telephoneHelp_Btn" Content="Tel." Width="100" Margin="10, 10, 15, 10"/>-->
-                    <Button x:Name="divideHelp_Btn" Content="Divide" Width="100" Margin="15, 10, 15, 10" Click="divideHelp_Btn_Click"/>
-                    <Button x:Name="mobHelp_Btn" Content="Mob" Width="100" Margin="15, 10, 10, 10" Click="mobHelp_Btn_Click"/>
+                    <Button x:Name="divideHelp_Btn" Content="Eloszt" Width="100" Margin="15, 10, 15, 10" Click="divideHelp_Btn_Click"/>
+                    <Button x:Name="mobHelp_Btn" Content="Tömeg" Width="100" Margin="15, 10, 10, 10" Click="mobHelp_Btn_Click"/>
                 </DockPanel>
             </StackPanel>
 

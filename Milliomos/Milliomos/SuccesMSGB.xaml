@@ -27,11 +27,11 @@
                 <RowDefinition Height="3*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="You're getting ahead!" Foreground="Orange" Margin="10,0,0,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="0" Text="Jutsz előre fele!" Foreground="Orange" Margin="10,0,0,0" VerticalAlignment="Center"/>
             <TextBlock x:Name="mainTextBLC" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
             <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
-                <Border Height="30" Width="50">
-                    <Button x:Name="yesBtn" Content="Yes" Click="yesBtn_Click" Style="{StaticResource ButtonStyle}"/>
+                <Border Height="30" Width="110">
+                    <Button x:Name="yesBtn" Content="Egyértelmű" Click="yesBtn_Click" Style="{StaticResource ButtonStyle}"/>
                 </Border>
             </StackPanel>
         </Grid>

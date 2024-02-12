@@ -30,8 +30,8 @@
             <TextBlock Grid.Row="0" Text="All you need to do is to follow the damn train CJ!" Foreground="Orange" Margin="10,0,0,0" VerticalAlignment="Center"/>
             <TextBlock x:Name="mainTextBLC" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
             <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
-                <Border Height="30" Width="60">
-                    <Button x:Name="okayBtn" Content="Okay" Click="okayBtn_Click" Style="{StaticResource ButtonStyle}"/>
+                <Border Height="30" Width="100">
+                    <Button x:Name="okayBtn" Content="Francba" Click="okayBtn_Click" Style="{StaticResource ButtonStyle}"/>
                 </Border>
             </StackPanel>
         </Grid>
