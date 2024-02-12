@@ -49,13 +49,15 @@ namespace Milliomos
             {
 
                 lenyomott.Background = Brushes.Green;
+                round++;
                 if (m.Actual < 10)
                 {
-                MessageBox.Show($"You've a brain, fantastic \n{GetCurrentAmount()}", "Nice dude", MessageBoxButton.OK, MessageBoxImage.None);
-                m.DeleteQuestion();
-                m.GetQuestion();
-                resetButtons();
-                Refresh_Scoreboard();
+                    SuccessMSGB smessagebox = new SuccessMSGB(GetCurrentAmount());
+                    smessagebox.ShowDialog();
+                    m.DeleteQuestion();
+                    m.GetQuestion();
+                    resetButtons();
+                    Refresh_Scoreboard();
                 }
                 else
                 {
@@ -65,28 +67,32 @@ namespace Milliomos
             }
             else
             {
+                checkIt = false;
                 lenyomott.Background = Brushes.Red;
-                if (MessageBox.Show($"Wrong, you have failed the game! {GetCurrentAmount()}", "All you need to do is to follow the damn train CJ", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
-                {
-                    MessageBox.Show("You little fuck, you think you can make a decision here!", "Asshole", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
+                FailedMSGB fmessagebox = new FailedMSGB(GetCurrentAmount());
+                fmessagebox.ShowDialog();
                 QuitGame();
             }
         }
 
         string amount = "";
+        bool checkIt = true;
+        int round = 1;
         private string GetCurrentAmount()
         {
-            if (m.Actual >= 1)
+
+            if (round > 1 && checkIt)
             {
-                return amount = $"Your current amount: {amount}";
+                return amount = $"Jelenlegi összeged: {amount}";
+            } else if (checkIt != true && round > 1) {
+                return amount = $"Összeg amit hazaviszel: {amount}";
+            } else if (m.Actual == 10)
+            {
+                return amount = "Nyertél 1 Millió Dollárt!";
             }
-            else if (m.Actual == 10)
+            else
             {
-                return "A Milly";
-            } else
-            {
-                return amount = "You haven't won anything";
+                return amount = "Nem nyertél semmit!";
             }
         }
 

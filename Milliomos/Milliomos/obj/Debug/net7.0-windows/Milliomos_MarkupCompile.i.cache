@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\
+D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\
 Milliomos
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\App.xaml
-11407045341
+D:\Milliomos\Milliomos\Milliomos\App.xaml
+3-1350134502
 2623924444
-71685803096
+91525375631
 198-1448991843
-MainWindow.xaml;
+FailedMSGB.xaml;MainWindow.xaml;SuccesMSGB.xaml;
 
-False
+True
 
