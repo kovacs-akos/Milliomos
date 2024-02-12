@@ -73,3 +73,5 @@ D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\FailedMSGB.g.cs
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\SuccesMSGB.g.cs
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\SuccesMSGB.baml
 D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\FailedMSGB.baml
+D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\WinMSGB.g.cs
+D:\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\WinMSGB.baml

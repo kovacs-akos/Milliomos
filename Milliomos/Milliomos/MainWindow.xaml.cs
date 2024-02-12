@@ -214,7 +214,8 @@ namespace Milliomos
 
         private void Win( )
         {
-            MessageBox.Show("You've won the game, you're a millionaire!", "Congratulations", MessageBoxButton.OK, MessageBoxImage.None);
+            WinMSGB wmessage = new WinMSGB();
+            wmessage.ShowDialog();
             QuitGame();
         }
     }
