@@ -100,7 +100,7 @@ namespace Milliomos
                 
                 
             }
-        }
+        
                 if (m.Actual >= 2 && m.Actual <= dockPanels.Count)
                 {
                     DockPanel previousQuestionPanel = dockPanels[dockPanels.Count - m.Actual + 1];
@@ -110,8 +110,8 @@ namespace Milliomos
                         label.Foreground = Brushes.Orange;
                     }
                 }
-            }
-        }
+    }
+        
 
 
 
@@ -129,7 +129,7 @@ namespace Milliomos
             buttons.AddRange(stackPanels[1].Children.OfType<Button>());
             int r1 = r.Next(0, 3);
             int r2 = r.Next(0, 3);
-            while (buttons[r1].Content.ToString()[0] == m.currentPack.Answer && buttons[r2].Content.ToString()[0] == m.currentPack.Answer && r1 == r2)
+            while (buttons[r1].Content.ToString()[0] == m.currentPack.Answer || buttons[r2].Content.ToString()[0] == m.currentPack.Answer || r1 == r2)
             {
                 r1 = r.Next(0, 3);
                 r2 = r.Next(0, 3);
@@ -139,9 +139,8 @@ namespace Milliomos
             buttons[r2].IsEnabled = false;
             buttons[r2].Visibility = Visibility.Hidden;
             
-            
-            //divideHelp_Btn.IsEnabled = false;
-            //divideHelp_Btn.Visibility = Visibility.Hidden;
+            divideHelp_Btn.IsEnabled = false;
+            divideHelp_Btn.Visibility = Visibility.Hidden;
         }
 
         private void mobHelp_Btn_Click(object sender, RoutedEventArgs e)

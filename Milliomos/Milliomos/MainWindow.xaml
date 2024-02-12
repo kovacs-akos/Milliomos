@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Milliomos"
         mc:Ignorable="d"
-        Title="Legyen Ön is milliomos!" Height="1080" Width="1920" FontFamily="Georgia" FontSize="26" WindowState="Maximized">
+        Title="Legyen Ön is milliomos!" Height="1080" Width="1920" FontFamily="Arial" FontSize="26" WindowState="Maximized">
 
     <Window.Resources>
         <Style x:Key="QuestionLBL">
