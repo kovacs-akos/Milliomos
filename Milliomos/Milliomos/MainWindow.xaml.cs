@@ -42,7 +42,7 @@ namespace Milliomos
             lenyomott.Foreground = Brushes.Black;
 
 
-            await Task.Delay(5000);
+            await Task.Delay(4000);
 
             lenyomott.Foreground = Brushes.White;
             if (m.CheckAnswer(lenyomott.Content.ToString()[0]))
@@ -162,15 +162,20 @@ namespace Milliomos
                     }
                 }
             } 
-            else
-            {
-                int rIndex = r.Next(0, 3);
-                string content2 = buttons[rIndex].Content.ToString();
-                if (content2[0] != (m.currentPack.Answer))
-                {
-                    buttons[rIndex].Background = Brushes.Orange;
-                }
-            }
+            //else
+            //{
+            //    int rIndex = r.Next(0, 3);
+            //    while() // le kell ellenőrizni, hogy ne a jó választ válassza ki
+            //    {
+            //        string content2 = buttons[rIndex].Content.ToString();
+            //        if (content2[0] != (m.currentPack.Answer))
+            //        {
+            //            buttons[rIndex].Background = Brushes.Orange;
+            //        }
+            //    }
+                
+                
+            //}
 
 
 
