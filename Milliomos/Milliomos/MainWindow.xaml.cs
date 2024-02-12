@@ -23,7 +23,7 @@ namespace Milliomos
     public partial class MainWindow : Window
     {
         Megoldas m = new Megoldas();
-        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -35,33 +35,38 @@ namespace Milliomos
 
         private async void BTN_Click(object sender, RoutedEventArgs e)
         {
-            
+
             Button lenyomott = (Button)sender;
             //set the background of the button to yellow and disable all buttons then wait 3 seconds
-            lenyomott.Background = Brushes.Yellow; 
+            lenyomott.Background = Brushes.Yellow;
             lenyomott.Foreground = Brushes.Black;
 
 
-            await Task.Delay(4000);
+            await Task.Delay(1000);
 
             lenyomott.Foreground = Brushes.White;
             if (m.CheckAnswer(lenyomott.Content.ToString()[0]))
             {
-                
+
                 lenyomott.Background = Brushes.Green;
-                
+                if (m.Actual < 10)
+                {
                 MessageBox.Show($"You've a brain, fantastic \n{GetCurrentAmount()}", "Nice dude", MessageBoxButton.OK, MessageBoxImage.None);
                 m.DeleteQuestion();
                 m.GetQuestion();
                 resetButtons();
                 Refresh_Scoreboard();
-                Win();
+                }
+                else
+                {
+                    Win();
+                }
                 lenyomott.Background = Brushes.Black;
             }
             else
             {
                 lenyomott.Background = Brushes.Red;
-                if (MessageBox.Show($"Wrong, you have failed the game! {GetCurrentAmount()}", "All you need to do is to follow the damn train CJ", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)                           
+                if (MessageBox.Show($"Wrong, you have failed the game! {GetCurrentAmount()}", "All you need to do is to follow the damn train CJ", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
                 {
                     MessageBox.Show("You little fuck, you think you can make a decision here!", "Asshole", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
@@ -76,7 +81,10 @@ namespace Milliomos
             {
                 return amount = $"Your current amount: {amount}";
             }
-            else
+            else if (m.Actual == 10)
+            {
+                return "A Milly";
+            } else
             {
                 return amount = "You haven't won anything";
             }
@@ -97,27 +105,26 @@ namespace Milliomos
                     label.Foreground = Brushes.White;
                     amount = label.Content.ToString();
                 }
-                
-                
+
+
+            }
+            if (m.Actual >= 2 && m.Actual <= dockPanels.Count)
+            {
+                DockPanel previousQuestionPanel = dockPanels[dockPanels.Count - m.Actual + 1];
+                foreach (Label label in previousQuestionPanel.Children.OfType<Label>())
+                {
+                    label.Background = Brushes.Black;
+                    label.Foreground = Brushes.Orange;
+                }
             }
         }
-                if (m.Actual >= 2 && m.Actual <= dockPanels.Count)
-                {
-                    DockPanel previousQuestionPanel = dockPanels[dockPanels.Count - m.Actual + 1];
-                    foreach (Label label in previousQuestionPanel.Children.OfType<Label>())
-                    {
-                        label.Background = Brushes.Black;
-                        label.Foreground = Brushes.Orange;
-                    }
-                }
-    }
-        
+
 
 
 
         private void QuitGame()
         {
-          this.Close();
+            this.Close();
         }
 
         private void divideHelp_Btn_Click(object sender, RoutedEventArgs e)
@@ -138,14 +145,14 @@ namespace Milliomos
             buttons[r1].Visibility = Visibility.Hidden;
             buttons[r2].IsEnabled = false;
             buttons[r2].Visibility = Visibility.Hidden;
-            
+
             divideHelp_Btn.IsEnabled = false;
             divideHelp_Btn.Visibility = Visibility.Hidden;
         }
 
         private void mobHelp_Btn_Click(object sender, RoutedEventArgs e)
         {
-            int chance = m.Actual * 100;
+            int chance = m.Actual * 5;
             Random r = new Random();
             int random = r.Next(1, 100);
             List<StackPanel> stackPanels = answersGrid.Children.OfType<StackPanel>().ToList();
@@ -162,26 +169,25 @@ namespace Milliomos
                         button.Background = Brushes.Orange;
                     }
                 }
-            } 
-            //else
-            //{
-            //    int rIndex = r.Next(0, 3);
-            //    while() // le kell ellenőrizni, hogy ne a jó választ válassza ki
-            //    {
-            //        string content2 = buttons[rIndex].Content.ToString();
-            //        if (content2[0] != (m.currentPack.Answer))
-            //        {
-            //            buttons[rIndex].Background = Brushes.Orange;
-            //        }
-            //    }
-                
-                
-            //}
+            }
+            else
+            {
+                int rIndex = r.Next(0, 3);
+                do
+                {
+                    string content2 = buttons[rIndex].Content.ToString();
+                    if (content2[0] != (m.currentPack.Answer))
+                    {
+                        buttons[rIndex].Background = Brushes.Orange;
+                    }
+                    rIndex = r.Next(0, 3);
+                } while (buttons[rIndex].Content.ToString()[0] == m.currentPack.Answer);
+            }
 
 
 
 
-       
+
             mobHelp_Btn.IsEnabled = false;
             mobHelp_Btn.Visibility = Visibility.Hidden;
         }
@@ -200,11 +206,10 @@ namespace Milliomos
             }
         }
 
-        private void Win() {
-            if (m.Actual == 11)
-            MessageBox.Show("You've won a million dollars, congratulations!", "Congratulations", MessageBoxButton.OK, MessageBoxImage.None);
+        private void Win( )
+        {
+            MessageBox.Show("You've won the game, you're a millionaire!", "Congratulations", MessageBoxButton.OK, MessageBoxImage.None);
             QuitGame();
         }
-
     }
 }

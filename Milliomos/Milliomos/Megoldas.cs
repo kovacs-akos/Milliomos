@@ -61,6 +61,7 @@ namespace Milliomos
             Random rnd = new Random();
             int rndPack = rnd.Next(0, packs.Count);
             currentPack = packs[rndPack];
+
             Actual++;
 
         }

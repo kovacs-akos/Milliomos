@@ -5,6 +5,7 @@ Mi az Anna-effekt?;A) xd;B) Túlárazott büfés kaja helyett foodorán rendelsz
 A tavalyiakból ítélve, mire számíthatunk az idei diáknapon?;A) Működni fog az órarend;B) Mi az a diáknap?;C) Semmi jóra;D) Dök utána nap magyarázkodik;C
 Kik dolgozzanak?;A) A szegények;B) A munkásember mindig pancser marad;C) Lopni, csalni, hazudni kell;D) A tanárok ne;B
 Tündi mikor kéri, hogy írj alá egy papírt?;A) Azonnal;B) Amikor a pancser kolléga ráér;C) Elfelejti;D) "Csak a hátsó ajtón lehet kimenni";A
-Mikor rendelj kaját?;A) Tokmindegy igazabol;B) Ha B epuletbe vagy;C) Sose rendelj, zsa bufe;D) A rendeles be van tiltva;A;
-Hol vegzi Zalan a Jedlik utan?;A) Hid alattł;B) Szegedi Csillagborton;C) Apple vezerigazgatosag;D) Mekiben(bekoltozik);D;
-Milyen lesz a Jedlikes farsang?;A) Dokosok most is bohocnak oltoznek;B) Fixen lany nyeri a jelmezversenyt;C) Diaknap se lesz, nemhogy farsang;D) Senki sem fog beoltozni;D
+Mikor rendelj kaját?;A) Tökmindegy igazából;B) Ha B épületbe vagy;C) Sose rendelj, zsa büfé;D) A rendelés be van tiltva;A;
+Hol végzi Zalán a Jedlik után?;A) Híd alatt;B) Szegedi Csillagbörtön;C) Apple vezérigazgatósag;D) Mekiben(beköltözik) ;D;
+Milyen lesz a Jedlikes farsang?;A) Dökösök most is bohócnak öltöznek;B) Fixen lány nyeri a jelmezversenyt;C) Diáknap se lesz, nemhogy farsang;D) Senki sem fog beöltözni;D
+Melyik nem igaz a gépészlépcsőre?;A) Backrooms;B) Olajfoltos;C) Téridő kapu;D) Marihuána ültetvények vannak;D
