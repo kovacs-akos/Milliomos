@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -27,6 +28,7 @@ namespace Milliomos
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += MainWindow_Loaded;
             this.DataContext = m;
             m.GetQuestion();
             Refresh_Scoreboard();
@@ -37,7 +39,7 @@ namespace Milliomos
         {
 
             Button lenyomott = (Button)sender;
-            //set the background of the button to yellow and disable all buttons then wait 3 seconds
+          
             lenyomott.Background = Brushes.Yellow;
             lenyomott.Foreground = Brushes.Black;
 
@@ -105,6 +107,11 @@ namespace Milliomos
             {
                 DockPanel currentQuestionPanel = dockPanels[dockPanels.Count - m.Actual];
 
+                if(m.Actual == 3 || m.Actual == 6 || m.Actual == 9)
+                {
+                    SetRandomBackground();
+                }
+
                 foreach (Label label in currentQuestionPanel.Children.OfType<Label>())
                 {
                     label.Background = Brushes.Orange;
@@ -123,15 +130,7 @@ namespace Milliomos
                     label.Foreground = Brushes.Orange;
                 }
             }
-        }
-
-
-
-
-        private void QuitGame()
-        {
-            this.Close();
-        }
+        } 
 
         private void divideHelp_Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -212,7 +211,32 @@ namespace Milliomos
             }
         }
 
-        private void Win( )
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            SetRandomBackground();
+        }
+
+        private void SetRandomBackground()
+        {
+            string imagesDirectory = ".\\images\\";
+            string[] imageFiles = Directory.GetFiles(imagesDirectory, "*.jpg");
+
+            if (imageFiles.Length > 0)
+            {
+                Random random = new Random();
+                string randomImagePath = imageFiles[random.Next(imageFiles.Length)];
+
+                BitmapImage bitmap = new BitmapImage(new Uri(randomImagePath, UriKind.Relative));
+                ImageBrush imageBrush = new ImageBrush(bitmap);
+                this.Background = imageBrush;
+            }
+        }
+        private void QuitGame()
+        {
+            this.Close();
+        }
+
+        private void Win()
         {
             WinMSGB wmessage = new WinMSGB();
             wmessage.ShowDialog();

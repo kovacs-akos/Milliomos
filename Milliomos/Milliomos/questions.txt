@@ -1,6 +1,6 @@
 ﻿Hány kebabot eszik meg Kaplon egy héten?;A) Egyet sem;B) Legalább kettőt;C) Az összeset;D) Mi az a kebab?;C
 A Szlovákiai utazáson, hány osztálytársunkat kellett hazavinni?;A) 1;B) 2;C) 3;D) 4;B
-Mi az Anna-effekt?;A) xd;B) Túlárazott büfés kaja helyett foodorán rendelsz;C) Balogh Anna tanárnőnél nem lehet puskazni;D) Szunetben 15-en könyökölnek a büfépultnál;D
+Mi az Anna-effekt?;A) Valami Anna féle dolog;B) Túlárazott büfés kaja helyett foodorán rendelsz;C) Balogh Anna tanárnőnél nem lehet puskazni;D) Szünetben 15-en könyökölnek a büfépultnál;D
 Átlagosan hányszor jön mentő a Jedlikhez?;A) Már hazajárnak;B) Hetente;C) Havonta;D) Fél évente;A
 A tavalyiakból ítélve, mire számíthatunk az idei diáknapon?;A) Működni fog az órarend;B) Mi az a diáknap?;C) Semmi jóra;D) Dök utána nap magyarázkodik;C
 Kik dolgozzanak?;A) A szegények;B) A munkásember mindig pancser marad;C) Lopni, csalni, hazudni kell;D) A tanárok ne;B

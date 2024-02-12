@@ -81,3 +81,5 @@ C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\FailedMSGB.baml
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\SuccesMSGB.baml
 C:\Users\Ákos\Desktop\Programozás\Milliomos\Milliomos\Milliomos\obj\Debug\net7.0-windows\WinMSGB.baml
+D:\Milliomos\Milliomos\Milliomos\bin\Debug\net7.0-windows\images\wallpaper2.jpg
+D:\Milliomos\Milliomos\Milliomos\bin\Debug\net7.0-windows\images\wallpaper3.jpg

@@ -54,10 +54,6 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
     </Window.Resources>
-    
-    <Window.Background>
-        <ImageBrush ImageSource=".\images\wallpaper.jpg" />
-    </Window.Background>
 
     <Grid x:Name="gameGrid">
         <Grid.RowDefinitions>
